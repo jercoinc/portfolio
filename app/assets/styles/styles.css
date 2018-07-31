@@ -1,21 +1,65 @@
-@import "normalize.css";
-@import "base/_variables";
-@import "base/_mixins";
-@import "base/_global";
-@import "modules/_large-hero";
-@import "modules/_btn";
-@import "modules/_wrapper";
-@import "modules/_page-section";
-@import "modules/_headline";
-@import "modules/_row";
-@import "modules/_generic-content-container";
-@import "modules/_section-title";
-@import "modules/_feature-item";
-@import "modules/_testimonial";
-@import "modules/_sprite";
-@import "modules/_site-footer";
-@import "modules/_site-header";
-@import "modules/_primary-nav";
-@import "modules/_reveal-item";
-@import "modules/_modal";
-@import "modules/_social-icons";
+.site-header {
+
+}
+
+
+
+.site-header__jerry-crow-picture {
+    
+    
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    
+
+
+    
+
+}
+
+.site-header__text{
+    position: relative;
+    top: 150px;
+}
+
+
+.site-events{
+    position: absolute;
+    top:700px;
+}
+
+
+
+.site-header__name{
+    
+    
+    text-align: center;
+}
+
+
+
+.site-header__description{
+    text-align: center;
+}
+
+.site-header__background-picture {
+
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
+
+}
+
+ 
+

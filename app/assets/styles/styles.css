@@ -1,49 +1,52 @@
+:root {
+    --main-green-color: #006600;
+    --main-dark-green-color: #003300;
+    --main-light-gray-color:#C0C0C0;
+    --main-dark-gray-color:#808080;
+    
+  }
+
+body{
+    font-family: arial;
+    
+}
+
+
+h1{
+    font-size: 25pt;
+}
+
+p{
+    font-size: 16pt;
+}
+
+
+.column1 {
+    float: left;
+    width: 20%;
+}
+.column2 {
+    float: left;
+    width: 80%;
+}
+
+/* Clear floats after the columns */
+.site-event{
+    
+    padding-bottom: 20px;
+
+}
+
+.site-event:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
 .site-header {
 
-}
-
-
-
-.site-header__jerry-crow-picture {
-    
-    
-    height: 100px;
-    width: 100px;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    
-
-
-    
-
-}
-
-.site-header__text{
-    position: relative;
-    top: 150px;
-}
-
-
-.site-events{
-    position: absolute;
-    top:700px;
-}
-
-
-
-.site-header__name{
-    
-    
-    text-align: center;
-}
-
-
-
-.site-header__description{
-    text-align: center;
 }
 
 .site-header__background-picture {
@@ -57,9 +60,86 @@
     left: 0;
     bottom: 0;
 
+}
 
+
+.site-header__jerry-crow-picture {
+    
+    height: 150px;
+    width: 150px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: solid; 
+    border-width: 10px;
+    border-color: var(--main-green-color);
 
 }
+
+
+.site-event{
+    
+    padding-bottom: 20px;
+
+}
+
+.site-event--date{
+    color:  var(--main-green-color);
+}
+
+
+.site-header__text{
+   
+    
+}
+
+.site-top--title{
+    color:  var(--main-green-color);
+}
+.site-top-text{
+    position: relative;
+    top: 100px;
+}
+
+
+.site-events{
+    position: relative;
+    top: 50px;
+}
+
+.site-event--icon{
+    padding-top: 40px;
+    height: 100px;
+    width: 100px;
+
+}
+
+.site-header__name{
+    
+    
+    text-align: center;
+}
+
+
+
+.site-header__description{
+    text-align: center;
+    
+    color: var(--main-dark-green-color);
+}
+
+.site-footer{
+    
+    padding-top: 20px;
+    text-align: right;
+    color: white;
+    background-color: var(--main-dark-green-color);
+    padding: 15px;
+
+}
+
 
  
 

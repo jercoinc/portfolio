@@ -142,13 +142,17 @@ p{
 
 }
 
-.site-footer{
+footer{
     
-    padding-top: 20px;
+    margin-top: 0px;
     text-align: right;
     color: white;
     background-color: var(--main-dark-green-color);
     padding: 15px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    margin-bottom: -60px;
 
 }
 

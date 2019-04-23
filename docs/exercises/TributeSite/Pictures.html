@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pictures</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="Styles/gallery.css" rel="stylesheet" />
+    <link href="Styles/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a class="active" href="Pictures.html">Pictures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="headText">
+            <h1 id="title">Steve Sansweet</h1>
+            <p>Rancho Obiwan Pictures</p>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-1.jpg" 
+                             onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-2.jpg"
+                             onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-3.jpg"
+                             onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-4.jpg"
+                             onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-5.jpg"
+                             onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-6.jpg"
+                             onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-7.jpg"
+                             onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-8.jpg"
+                             onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-9.jpg"
+                            onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-7.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-8.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="images/originals/Steve-Sansweets-Rancho-Obi-Wan-Star-Wars-Museum-9.png" style="width:100%">
+                </div>
+ 
+            </div>
+        </div>
+
+
+            <p><a href="#">Go To Top</a></p>
+
+
+
+
+    </main>
+    <footer></footer>
+    <!-- Order of javascript is important -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="scripts/lightbox.js"></script>
+
+</body>
+</html>

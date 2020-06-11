@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet" />
     <script src="js/jquery.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -25,47 +26,9 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            'use strict';
-            jQuery('body').backstretch([
-                "images/bg/bg1.jpg",
-                "images/bg/bg2.jpg",
-                "images/bg/bg3.jpg",
-                "images/bg/bg4.jpg",
-                "images/bg/bg5.jpg"
-            ], { duration: 5000, fade: 500, centeredY: true });
-
-            $("#mapwrapper").gMap({
-                controls: false,
-                scrollwheel: false,
-                markers: [{
-                    latitude: 40.7566,
-                    longitude: -73.9863,
-                    icon: {
-                        image: "images/marker.png",
-                        iconsize: [44, 44],
-                        iconanchor: [12, 46],
-                        infowindowanchor: [12, 0]
-                    }
-                }],
-                icon: {
-                    image: "images/marker.png",
-                    iconsize: [26, 46],
-                    iconanchor: [12, 46],
-                    infowindowanchor: [12, 0]
-                },
-                latitude: 40.7566,
-                longitude: -73.9863,
-                zoom: 14
-            });
-        });
-    </script>
-</head>
-<!--/head-->
-
+</head><!--/head-->
 <body>
-    <div id="preloader"></div>
+<div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -84,10 +47,9 @@
                 </ul>
             </div>
         </div>
-    </header>
-    <!--/header-->
+    </header><!--/header-->
 
-    <section id="main-slider" class="no-margin">
+    <section id="single-page-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item active">
@@ -95,25 +57,21 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered">
-
+                                    
                                     <h2 class="boxed animation animated-item-1 fade-down">Jerry Crow</h2>
-                                    <br />
+
                                     <h3 class="boxed animation animated-item-2 fade-up">Full Stack Web Developer</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--/.item-->
-            </div>
-            <!--/.carousel-inner-->
-        </div>
-        <!--/.carousel-->
-    </section>
-    <!--/#main-slider-->
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
 
     <div id="content-wrapper">
-
+        
         <section id="about-us" class="white">
             <div class="container">
                 <div class="gap"></div>
@@ -126,64 +84,85 @@
                 </div>
                 <div class="row">
                     <div id="indexPageBody" class="col-md-10 col-md-offset-1 fade-up">
-                        <p>My name is Jerry Crow, and I am a Full Stack .NET Web Developer.
-                            I have a Computer Information Systems Degree from Missouri State University.
-                            I started my computer career working in Visual Basic and spent the last 7 years coding
-                            solutions in Java Core.
-                            I also worked on front end web design in a proprietary company web product.
-                            I recently expanded my skills by training at Centriq.
-                            I am very excited about the new skills
-                            I have learned and where it will take my career.
+                        <p>My name is Jerry Crow and I am a Full Stack .NET Web Developer.
+                           I have a Computer Information’s Systems Degree from Missouri State.
+                           I started my computer career working in Visual Basic.
+                           I spent the last 7 years coding solutions in Java Core.
+                           I also worked on frontend web design in a proprietary company web product.
+                           I recently expanded my skills by training at Centriq.
+                           I am very excited about the new skills I have learned and where it will take my career.
                         </p>
 
-                        <h2>This Web Site Is Just a test for Git Hub. The real thing will be coming soon.</h2>
 
                     </div>
                     <div class="col-md-4 fade-up">
 
                     </div>
                 </div>
-                <div class="gap"></div>
+               <div class="gap"></div>
             </div>
         </section>
 
+  
+
+        </div>
 
 
-    </div>
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+            "images/bg/bg1.jpg",
+            "images/bg/bg2.jpg",
+            "images/bg/bg3.jpg",
+            "images/bg/bg4.jpg",
+            "images/bg/bg5.jpg"
+        ], {duration: 5000, fade: 500, centeredY: true });
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: {
+                image: "images/marker.png",
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
 
     <div id="footer-wrapper">
-
+        
 
         <footer id="footer" class="">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        &copy;
-                        <script type="text/javascript">
-                            document.write(new Date().getFullYear());
-                        </script>
-                        Jerry Crow Profile Site. All Rights Reserved. <a
-                            href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                        &copy; 2019 Jerry Crow Profile Site. All Rights Reserved. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
                     </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
-                            <!--#gototop-->
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!--/#footer-->
+        </footer><!--/#footer-->
     </div>
 
 
     <script src="js/plugins.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
     <script src="js/init.js"></script>
 </body>
-
 </html>

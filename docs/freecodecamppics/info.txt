@@ -1,3 +1,0 @@
-This folder is for graphics used in freeCodeCamp sites that are in codepen.
-Codepen has no free storage site.
- 

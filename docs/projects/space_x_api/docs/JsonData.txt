@@ -1,0 +1,144 @@
+https://api.spacexdata.com/v3/launches/latest
+
+
+
+[{
+	"flight_number": 80,
+	"mission_name": "RADARSAT Constellation",
+	"mission_id": [],
+	"launch_year": "2019",
+	"launch_date_unix": 1560349020,
+	"launch_date_utc": "2019-06-12T14:17:00.000Z",
+	"launch_date_local": "2019-06-12T07:17:00-07:00",
+	"is_tentative": false,
+	"tentative_max_precision": "hour",
+	"tbd": false,
+	"launch_window": 780,
+	"rocket": {
+		"rocket_id": "falcon9",
+		"rocket_name": "Falcon 9",
+		"rocket_type": "FT",
+		"first_stage": {
+			"cores": [
+				{
+					"core_serial": "B1051",
+					"flight": 2,
+					"block": 5,
+					"gridfins": true,
+					"legs": true,
+					"reused": true,
+					"land_success": true,
+					"landing_intent": true,
+					"landing_type": "RTLS",
+					"landing_vehicle": "LZ-4"
+				}
+			]
+		},
+		"second_stage": {
+			"block": 5,
+			"payloads": [
+				{
+					"payload_id": "RADARSAT Constellation",
+					"norad_id": [
+						44322,
+						44323,
+						44324
+					],
+					"reused": false,
+					"customers": [
+						"CSA"
+					],
+					"nationality": "Canada",
+					"manufacturer": "Maxar Technologies",
+					"payload_type": "Satellite",
+					"payload_mass_kg": 1425,
+					"payload_mass_lbs": 3141.59,
+					"orbit": "SSO",
+					"orbit_params": {
+						"reference_system": "geocentric",
+						"regime": "sun-synchronous",
+						"longitude": null,
+						"semi_major_axis_km": 6972.3,
+						"eccentricity": 0.0014294,
+						"periapsis_km": 584.199,
+						"apoapsis_km": 604.132,
+						"inclination_deg": 97.7659,
+						"period_min": 96.565,
+						"lifespan_years": null,
+						"epoch": "2019-06-14T04:20:23.000Z",
+						"mean_motion": 14.91209195,
+						"raan": 172.3023,
+						"arg_of_pericenter": 247.8176,
+						"mean_anomaly": 112.152
+					}
+				}
+			]
+		},
+		"fairings": {
+			"reused": false,
+			"recovery_attempt": false,
+			"recovered": null,
+			"ship": null
+		}
+	},
+	"ships": [],
+	"telemetry": {
+		"flight_club": null
+	},
+	"launch_site": {
+		"site_id": "vafb_slc_4e",
+		"site_name": "VAFB SLC 4E",
+		"site_name_long": "Vandenberg Air Force Base Space Launch Complex 4E"
+	},
+	"launch_success": true,
+	"links": {
+		"mission_patch": "https://images2.imgbox.com/c3/06/2irK3PGj_o.png",
+		"mission_patch_small": "https://images2.imgbox.com/4e/dd/qsIUVh1j_o.png",
+		"reddit_campaign": "https://www.reddit.com/r/spacex/comments/buq487/radarsat_constellation_launch_campaign_thread",
+		"reddit_launch": "https://www.reddit.com/r/spacex/comments/byp69f/rspacex_radarsat_constellation_official_launch",
+		"reddit_recovery": null,
+		"reddit_media": null,
+		"presskit": "https://www.spacex.com/sites/spacex/files/radarsat_constellation_mission_press_kit.pdf",
+		"article_link": "https://spaceflightnow.com/2019/06/12/three-canadian-radar-surveillance-satellites-ride-spacex-rocket-into-orbit/",
+		"wikipedia": "https://en.wikipedia.org/wiki/RADARSAT_Constellation",
+		"video_link": "https://youtu.be/8A2nJd9Urk8",
+		"youtube_id": "8A2nJd9Urk8",
+		"flickr_images": [
+			"https://live.staticflickr.com/65535/48052269657_71764b0fb3_o.jpg",
+			"https://live.staticflickr.com/65535/48052269617_34447619f0_o.jpg",
+			"https://live.staticflickr.com/65535/48052224858_20ea2a411e_o.jpg",
+			"https://live.staticflickr.com/65535/48052269562_325c117b81_o.jpg",
+			"https://live.staticflickr.com/65535/48052182461_a419db6b84_o.jpg",
+			"https://live.staticflickr.com/65535/48052224733_f89f1dd046_o.jpg"
+		]
+	},
+	"details": "SpaceX is launching the three satellite RADARSAT Constellation Mission into Sun Synchronous orbit from SLC-4E, VAFB. The RCM spacecraft are synthetic aperture radar (SAR) Earth observation satellites built by the Canadian space company, MDA, for the Canadian Space Agency. This mission was delayed when the originally slated booster failed to land after CRS-16. The booster is expected to return to LZ-4.",
+	"upcoming": false,
+	"static_fire_date_utc": "2019-06-08T08:39:00.000Z",
+	"static_fire_date_unix": 1559983140,
+	"timeline": {
+		"webcast_liftoff": 759,
+		"go_for_prop_loading": -2280,
+		"rp1_loading": -2100,
+		"stage1_lox_loading": -2100,
+		"stage2_lox_loading": -960,
+		"engine_chill": -420,
+		"prelaunch_checks": -60,
+		"propellant_pressurization": -60,
+		"go_for_launch": -45,
+		"ignition": -3,
+		"liftoff": 0,
+		"maxq": 63,
+		"meco": 133,
+		"stage_sep": 137,
+		"second_stage_ignition": 144,
+		"fairing_deploy": 169,
+		"first_stage_boostback_burn": 198,
+		"first_stage_entry_burn": 364,
+		"first_stage_landing": 473,
+		"seco-1": 508,
+		"second_stage_restart": 3008,
+		"seco-2": 3012,
+		"payload_deploy": 3283
+	}
+]}

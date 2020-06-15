@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet" />
     <!-- jQuery UI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -28,60 +29,69 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
 
     <script type="text/javascript">
-    jQuery(document).ready(function($){
-    'use strict';
-        jQuery('body').backstretch([
-            "images/bg/bg5.jpg"
-        ], {duration: 5000, fade: 500});
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg5.jpg"
+            ], { duration: 5000, fade: 500 });
 
-        $("#mapwrapper").gMap({ controls: false,
-            scrollwheel: false,
-            markers: [{
-                latitude:40.7566,
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.png",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
                 longitude: -73.9863,
-            icon: { image: "images/marker.png",
-                iconsize: [44,44],
-                iconanchor: [12,46],
-                infowindowanchor: [12, 0] } }],
-            icon: {
-                image: "images/marker.png",
-                iconsize: [26, 46],
-                iconanchor: [12, 46],
-                infowindowanchor: [12, 0] },
-            latitude:40.7566,
-            longitude: -73.9863,
-            zoom: 14 });
-    });
+                zoom: 14
+            });
+        });
     </script>
-</head><!--/head-->
+</head>
+<!--/head-->
+
 <body>
-<div id="preloader"></div>
+    <div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
-    <div id="search-wrapper">
-        <div class="container">
-            <input id="search-box" placeholder="Search">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                 </button>
-                
+
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="links.html">Links</a></li>
+                    <li><a href="centriq.html">Centriq</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html">Project</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
                 </ul>
             </div>
         </div>
-    </header><!--/header-->
+    </header>
+    <!--/header-->
 
     <section id="single-page-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
@@ -93,15 +103,19 @@
                                 <div class="center gap fade-down section-heading">
                                     <h2 class="main-title">Resume</h2>
                                     <hr>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
     <div id="content-wrapper">
         <section id="about-us" class="white">
@@ -111,9 +125,13 @@
                     <h3><strong>QUALIFICATIONS</strong></h3>
                     <section>
                         <ul>
-                            <li>Solid foundational knowledge of designing and developing full-stack web applications using .NET framework.</li>
-                            <li>Software Developer with experience in analysis, design, and the development of small and large projects using Java and VB.</li>
-                            <li>Built customized solutions to improve business processes and operations that increased profitability.</li>
+                            <li>Solid foundational knowledge of designing and developing full-stack web applications
+                                using .NET framework.</li>
+                            <li>Software Developer with experience in analysis, design, and the development of small and
+                                large projects using Java and VB.</li>
+                            <li>Built customized solutions to improve business processes and operations that increased
+                                profitability.</li>
+                            <li>Oracle Java SE 8 Programmer I, 1Z0-808 Certified.</li>
                         </ul>
                     </section>
 
@@ -121,41 +139,72 @@
                     <section>
                         <p>
                             <span class="bold">Front End: &nbsp;</span>
-                            &nbsp;	HTML5, JavaScript, jQuery, jQueryUI, CSS3, Responsive/Mobile Web Development, Bootstrap
+                            &nbsp; HTML5, JavaScript, jQuery, jQueryUI, CSS3, Responsive/Mobile Web Development,
+                            Bootstrap
                         </p>
                         <p>
                             <span class="bold">Middle Tier:</span>
-                            &nbsp;	Visual Studio, C#.NET, ASP.NET, LINQ, MVC, Entity Framework
+                            &nbsp; Visual Studio, C#.NET, ASP.NET, LINQ, MVC, Entity Framework
                         </p>
                         <p>
                             <span class="bold">Back End: &nbsp;</span>
-                            &nbsp; &nbsp;ADO.NET, SQL, SQL Server, SSMSE
+                            &nbsp; &nbsp;ADO.NET, SQL, SQL Server, SSMSE, SSRS
                         </p>
                         <p>
                             <span class="bold">Other:</span>
-                            &nbsp; &nbsp;Java, Visual Basic, Git, NodeJS, Apache Tomcat, DB2, MySql                        
+                            &nbsp; &nbsp;Python, XML, JSON, Visual Basic, Git, SVN, NodeJS, Apache Tomcat, DB2, MySql
                         </p>
                     </section>
 
                     <h3><strong>PROFESSIONAL EXPERIENCE</strong></h3>
                     <section>
+                        <h4>SAIC</h4>
+                        <h5>Java Programmer</h5>
+                        <p><em>2019 - 2020</em></p>
+                        <ul>
+                            <li>Worked on USDA government contract.</li>
+                            <li>Maintained and updated Dairy Margin Coverage program J2EE website.</li>
+                            <li>Debugged and fixed a variety of web issues. Built Junit tests.</li>
+                            <li>Studied and completed Java Certification for job requirement.</li>
+                            <li>Received Public Trust Level 5 Clearance.</li>
+                        </ul>
+                        <br />
+                        <h4>Data Freight Inc.</h4>
+                        <h5>Programmer</h5>
+                        <p><em>2019</em></p>
+                        <ul>
+                            <li>Executed and maintained daily billing cycle. Corrected any Electronic Data Interchange
+                                (EDI) file issues.</li>
+                            <li>Built C++ program that reported use of billing cycle batch numbers.</li>
+                            <li>Built C++ program that read client error report, resending any missing files.</li>
+                            <li>Responsible for building, maintaining and supporting 22 computers used by data entry
+                                staff and brokerage group.</li>
+                        </ul>
+                        <br />
                         <h4>DST Systems</h4>
                         <h5>Programmer Analyst</h5>
                         <p><em>1995 - 2018</em></p>
                         <ul>
                             <li>Supported DST open source apps built in Java Spring framework.</li>
                             <li>Maintained client web templates in DST Fan Web product.</li>
-                            <li>Built Java application that processed client emails, detaching xlsx files, and converting them to a DST format.</li>
-                            <li>Wrote Java application to convert mainframe reports to PDF’s and emailed them to clients.</li>
-                            <li>Wrote several Java applications that gathered data from external databases. Data was then converted to XML language so items could be utilized by AWD Automated Work Distributor.</li>
-                            <li>Rewrote and adjusted a variety of internally developed Visual Basic applications to Java.</li>
+                            <li>Built Java application that processed client emails, detaching xlsx files, and
+                                converting them to a DST format.</li>
+                            <li>Wrote Java application to convert mainframe reports to PDF’s and emailed them to
+                                clients.</li>
+                            <li>Wrote several Java applications that gathered data from external databases. Data was
+                                then converted to XML language so items could be utilized by AWD Automated Work
+                                Distributor.</li>
+                            <li>Rewrote and adjusted a variety of internally developed Visual Basic applications to
+                                Java.</li>
                             <li>Built and supported AWD Rip servers.</li>
                             <li>Developed HTML forms for High Speed Data Entry product.</li>
                             <li>Developed check file generator for BottomLine Checkguard product.</li>
                             <li>Developed Crystal Reports viewer with security options using Visual Basic.</li>
-                            <li>Participated in DST Small Client Training. Attended online classes in personal time.</li>
-                            <li>Updated skills by attending Java and HTML classes at community colleges for 3 years.</li>
-                       </ul>
+                            <li>Participated in DST Small Client Training. Attended online classes in personal time.
+                            </li>
+                            <li>Updated skills by attending Java and HTML classes at community colleges for 3 years.
+                            </li>
+                        </ul>
                         <br />
                         <h4>Country Meadows Baptist Church</h4>
                         <h5>Voluntary Technology Specialist</h5>
@@ -163,9 +212,10 @@
                         <ul>
                             <li>Designed and built a Visual Basic attendance tracking application.</li>
                             <li>Built and maintained Windows server. Maintained all staff accounts.</li>
-                            <li>Designed and installed Cat5 network in new building.  Setup all routers and connectivity between old and new buildings.</li>
+                            <li>Designed and installed Cat5 network in new building. Setup all routers and connectivity
+                                between old and new buildings.</li>
                             <li>Designed and built wireless network in building using multiple wireless routers.</li>
-                            <li>Built and repaired computers.  Installed Windows and setup all software.</li>
+                            <li>Built and repaired computers. Installed Windows and setup all software.</li>
                             <li>Designed and installed projector media system.</li>
                         </ul>
                     </section>
@@ -185,7 +235,7 @@
                     <section>
                         <h4>Centriq</h4>
                         <h5>Full Stack Web Developer</h5>
-                        <p><em>June 2018</em></p>
+                        <p><em>June 2019</em></p>
                         <h6>Core Competencies:</h6>
                         <ul>
                             <li>MVC Framework</li>
@@ -205,8 +255,18 @@
                     <h3><strong>INDEPENDENT DEVELOPMENT PROJECTS</strong></h3>
                     <section>
                         <ul>
-                            <li><span class="bold">U Store:</span> &nbsp; Created a secure application for managing product data. Application is built to simulate an online store front with a shopping cart. Administrators have the ability to manage product, category and vendor data.</li>
-                            <li><span class="bold">Final Project:</span> &nbsp; Created a secure data-driven ASP.NET MVC application from design through deployment for managing the tracking and organization of hardware and software within a company. Administrators have the ability to manage employee, department data and all details relating to assigned hardware and software.</li>
+                            <li><span class="bold">SpaceX Challenge:</span> &nbsp; Created a ReactJS website that
+                                consumes a SpaceX api with no prior knowledge of React. JSON and NodeJS used.
+                            </li>
+                            <li><span class="bold">Haunted Farm Final Project:</span> &nbsp; Created a secure,
+                                data-driven ASP.NET MVC application from design through deployment for managing
+                                the tracking reservations for a farm with fall attractions. Customers have the
+                                ability to make reservations, and administrators have the ability to manage and
+                                assist in those reservations.
+                            </li>
+                            <li><span class="bold">U Store:</span> &nbsp; Created a secure application for managing
+                                product data. Application is built to simulate an online store front with a shopping
+                                cart. Administrators have the ability to manage product, category and vendor data.</li>
                         </ul>
                     </section>
 
@@ -227,16 +287,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        &copy; 2019 Your Site Name. All Rights Reserved. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                        &copy; 2019 Your Site Name. All Rights Reserved. <a
+                            href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
                     </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                            <!--#gototop-->
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </footer>
+        <!--/#footer-->
     </div>
 
     <script src="js/bootstrap.min.js"></script>
@@ -258,4 +321,5 @@
 
 
 </body>
+
 </html>

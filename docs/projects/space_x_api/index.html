@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Space X Table - HTML Version</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- BootStrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="Index.html">Home</a></li>
+          <li><a href="htmltable.html">HTML Version</a></li>
+          <li><a href="reactapp\index.html">REACT Version</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="headText">
+        <h1 id="title">Space X Challenge</h1>
+        <p>My first launch into the world of React.</p>
+      </div>
+      <div class="center">
+        <div class="info-box">
+          <h3 class="headline ">
+            The Challenge
+          </h3>
+          <p>
+            I was challenged by a company to build a small project. This project
+            would involve using some new technologies, and it was a test to see
+            what I could do. I was very interested in using this new technology
+            and was excited to add it to my project list.<br />
+          </p>
+          <h3 class="headline">
+            The Instructions
+          </h3>
+          <p>
+            Create a basic website that shows launch data for SpaceX rocket
+            missions in a grid/table.
+            <br />Your web application should:
+          </p>
+          <ul>
+            <li>
+              Display the date and time of each mission, the rocket name, a link
+              to the cargo manifest, and whether the launch was a success.
+            </li>
+            <li>
+              Display the time of the mission in Central Time (CT).
+            </li>
+            <li>
+              Order the launches in reverse chronological order.
+            </li>
+            <li>
+              For each launch, include a column that ranks the payload mass,
+              with the heaviest payload being rank 1.
+            </li>
+            <li>
+              Work in any modern browser (i.e. Chrome, Firefox, IE10+, Safari,
+              etc.).
+            </li>
+            <li>Use the React JavaScript framework.<br />&nbsp</li>
+          </ul>
+
+          <h3 class="headline">
+            My Story
+          </h3>
+          <p>
+            I have a background in Java Core and Visual Basic. I had just
+            finished Centriq Training, learning Full Stack web development with
+            .Net. I had one other course in web technologies the used NodeJS. I
+            have some good skills, but this project was definitely challenging
+            every step of the way.
+          </p>
+          <p>
+            As I started, I chose AG-Grid as my grid product. The recommended
+            grid product only came with a 30 day free trial. Since I wanted this
+            project on my website for more 30 days, I went with a product that
+            had a community version.
+          </p>
+          <p>
+            The requesting company gave me more time for the project. They
+            wanted me to see if I could replicate my HTML version in React with
+            a table, without AG-Grid.<br />&nbsp
+          </p>
+          <h3 class="headline">
+            My Timeline
+          </h3>
+          <ul>
+            <li>
+              <strong>Friday Afternoon</strong> – I received the challenge and
+              started looking at the data in Json format and working on the
+              Javascript call to retrieve the data.
+            </li>
+            <li>
+              <strong>Sunday</strong> – I decided to make sure I could complete
+              all the data requirements, so I built a version out of HTML which
+              I have displayed on the website.
+            </li>
+            <li>
+              <strong>Monday</strong> – I finished the HTML version. I started
+              working with NodeJS and React.
+            </li>
+            <li>
+              <strong>Tuesday</strong> – I finished working with various grid
+              products in the morning and settled on AG-Grid. I figured how to
+              get a React program deployed on my website.
+            </li>
+            <li>
+              <strong>Wednesday</strong> – I hit the wall. I started to work
+              with the way React handles Json. This is where all the problems
+              occurred, probably because I have never worked with React or JSX.
+              From what I have seen, React will load the Json and store it in
+              the State. The issue is, the SpaceX data had lots of changes that
+              needed to take place before the grid displayed it. All examples of
+              setState were basic and would not come close to what I needed to
+              do. Some of the setState examples never worked in my React
+              program. I spent a couple of hours building and playing with a
+              REST API with express. I wanted to see if I could filter the
+              SpaceX data. It was apparent that this was not the right way to
+              go. Time to call it a day and go with the fields I could display
+              without issues. I realized this project required much more time
+              and knowledge. I contacted the company for further instruction.
+            </li>
+            <li>
+              <strong>Friday</strong> –The requesting company gave me more time
+              to complete the project without using AG-Grid.
+            </li>
+            <li>
+              <strong>Monday</strong> – I reviewed several YouTube React
+              lectures. I removed AG-Grid. I ran into issues with the current
+              code not wanting to load the SpaceX data.
+            </li>
+            <li>
+              <strong>Tuesday</strong> – I fixed the SpaceX data loading issue.
+              Got UTC time, flight number, mission name, rocket name and launch
+              status added to the table.
+            </li>
+            <li>
+              <strong>Wednesday</strong> - Payload mass calculation and cargo
+              manifest added to the table. I had issues with displaying HTML in
+              React. I researched and added NPM package ReactHtmlParser. I had
+              issues with building the rank table and getting functions to see
+              the data.
+            </li>
+            <li>
+              <strong>Thursday</strong> – I adjusted date/time to display local
+              time. I finished the rank table by adding it to the State so
+              functions could process it. I wrapped up the website and code.<br />&nbsp
+            </li>
+          </ul>
+          <h3 class="headline">
+            Conclusion
+          </h3>
+          <p>
+            This was a really cool challenge, and I am grateful for the
+            opportunity to take on this project. I was able to complete the
+            project successfully. At first, I was unable to get AG-Grid to do
+            some of the more complex work, but I was completely successful using
+            a HTML table in React. It was very apparent this project would have
+            flowed smoother if I had previous experience in using React. I am
+            looking forward to taking classes to acquire this knowledge for
+            future projects.
+            <br />&nbsp
+          </p>
+
+          <h3>Project Links</h3>
+          <p>
+            Here are some links of the resources I used for the project.
+          </p>
+          <ul>
+            <li>
+              API info -
+              <a href="https://github.com/r-spacex/SpaceX-API" target="_blank"
+                >SpaceX API</a
+              >
+            </li>
+            <li>
+              API Call -
+              <a href="https://api.spacexdata.com/v3/launches" target="_blank"
+                >Json List</a
+              >
+            </li>
+            <li>
+              React installing and getting demo running -
+              <a
+                href="https://www.youtube.com/watch?v=Ke90Tje7VS0"
+                target="_blank"
+                >Learn React - Programming with Mosh
+              </a>
+            </li>
+            <li>
+              Restful API -
+              <a
+                href="https://medium.com/@etiennerouzeaud/how-create-an-api-restfull-in-express-node-js-without-database-b030c687e2ea"
+                target="_blank"
+                >How to create an API RESTfull in Express (Node.js) without
+                database</a
+              >
+            </li>
+            <li>
+              NPM Package -
+              <a
+                href="https://www.npmjs.com/package/react-html-parser"
+                target="_blank"
+                >React HTML Parser</a
+              >
+            </li>
+            <li>
+              Source Code -
+              <a href="https://github.com/jercoinc/SpaceXapi" target="_blank"
+                >HTML and React source code.<br />&nbsp</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="headline">
+            Tools
+          </h3>
+          <ul>
+            <li>
+              Editor - Visual Studio Code
+            </li>
+            <li>
+              VS Code Extensions - Babel / Prettier / HTML Boilerplate
+            </li>
+            <li>
+              Command Line - Cmder
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="img-div">
+        <img id="image" src="./img/SpaceXBanner.png" alt="SpaceX banner" />
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

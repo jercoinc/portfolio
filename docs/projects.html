@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,32 +26,40 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
 
     <script type="text/javascript">
-    jQuery(document).ready(function($){
-    'use strict';
-        jQuery('body').backstretch([
-            "images/bg/bg5.jpg"
-        ], {duration: 5000, fade: 500});
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/bg/bg5.jpg"
+            ], { duration: 5000, fade: 500 });
 
-        $("#mapwrapper").gMap({ controls: false,
-            scrollwheel: false,
-            markers: [{
-                latitude:40.7566,
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    latitude: 40.7566,
+                    longitude: -73.9863,
+                    icon: {
+                        image: "images/marker.png",
+                        iconsize: [44, 44],
+                        iconanchor: [12, 46],
+                        infowindowanchor: [12, 0]
+                    }
+                }],
+                icon: {
+                    image: "images/marker.png",
+                    iconsize: [26, 46],
+                    iconanchor: [12, 46],
+                    infowindowanchor: [12, 0]
+                },
+                latitude: 40.7566,
                 longitude: -73.9863,
-            icon: { image: "images/marker.png",
-                iconsize: [44,44],
-                iconanchor: [12,46],
-                infowindowanchor: [12, 0] } }],
-            icon: {
-                image: "images/marker.png",
-                iconsize: [26, 46],
-                iconanchor: [12, 46],
-                infowindowanchor: [12, 0] },
-            latitude:40.7566,
-            longitude: -73.9863,
-            zoom: 14 });
-    });
+                zoom: 14
+            });
+        });
     </script>
-</head><!--/head-->
+</head>
+<!--/head-->
+
 <body>
     <div id="preloader"></div>
     <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
@@ -77,7 +86,8 @@
                 </ul>
             </div>
         </div>
-    </header><!--/header-->
+    </header>
+    <!--/header-->
 
     <section id="single-page-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel">
@@ -93,42 +103,103 @@
                             </div>
                         </div>
                     </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
 
     <div id="content-wrapper">
         <section id="about-us" class="white">
             <div class="container">
                 <!-- ROW 1 ------------------------------------------------------------------------------->
                 <div id="meet-the-team" class="row">
-                    <div class="col-md-12 col-xs-6">
-                        <div class="center team-member">
-                            <a href="http://www.jerrycrow.com/" target="_blank">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/portfolio/UnderConstructionFence.jpg" alt="Project 1 Picture"/>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="center team-member projectPadding">
+                            <a href="projects/space_x_api/index.html" target="_blank">
+                                <img class="img-responsive img-thumbnail bounce-in"
+                                    src="images/portfolio/SpaceXProject.jpg" alt="SpaceX Challenge" />
                             </a>
                             <div class="team-content fade-up">
-                                <h5 class="font-weight-bold">Project 1 - Under Construction</h5>
-                                <p>This page is under construction and will be availabe soon.</p>
+                                <h5 class="font-weight-bold">Project - SpaceX Challenge</h5>
+                                <p>This project was a challenge to see what I could do with API’s and ReactJS with no
+                                    prior knowledge of React.<br />It is an example of what I can accomplish in a short
+                                    period of time.</p>
+                                <br />
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="center team-member projectPadding">
+                            <a href="http://fsdp.jerrycrow.com/" target="_blank">
+                                <img class="img-responsive img-thumbnail bounce-in"
+                                    src="images/portfolio/HauntedFarmProjectSmall.jpg" alt="Haunted Farm Website" />
+                            </a>
+                            <div class="team-content fade-up">
+                                <h5 class="font-weight-bold">Project - Haunted Farm</h5>
+                                <p>
+                                    This site is a secure, data-driven ASP.NET MVC application
+                                    from design through deployment for managing the tracking
+                                    reservations for a farm with fall attractions.
+                                    Customers have the ability to make reservations,
+                                    and administrators have the ability to manage and
+                                    assist in those reservations.
+
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="text-center"><a class="btn btn-info"
+                                href="projects/hauntedfarm/docs/JerryCrow-FinalProject.pdf" target="_blank">Final
+                                Project
+                                Documentation</a></div>
+
+                    </div>
+                </div>
+                <!--/#meet-the-team-->
+
+
+                <!-- ROW 2 ------------------------------------------------------------------------------->
+                <div id="meet-the-team" class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="center team-member projectPadding">
+                            <a href="http://ustore.jerrycrow.com/" target="_blank">
+                                <img class="img-responsive img-thumbnail bounce-in"
+                                    src="images/portfolio/uStoreSmall.jpg" alt="uStore" />
+                            </a>
+                            <div class="team-content fade-up">
+                                <h5 class="font-weight-bold">Project - uStore</h5>
+                                <p>
+                                    This site's focus is a MVC Sandbox that displays
+                                    items that are loaded from SQL Server database.
+                                    This site does not use a shopping cart at this time.
+                                    <br />
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-xs-6">
-                        <div class="center team-member">
-                            <a href="http://www.jerrycrow.com/" target="_blank">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/portfolio/UnderConstructionSunset.jpg" alt="Project 2 Picture" />
+                    <div class="col-md-6 col-xs-12">
+                        <div class="center team-member projectPadding">
+                            <a href="projects/TributeSite/Index.html" target="_blank">
+                                <img class="img-responsive img-thumbnail bounce-in"
+                                    src="images/portfolio/TributeSite.jpg" alt="Tribute Site" />
                             </a>
                             <div class="team-content fade-up">
-                                <h5 class="font-weight-bold">Project 2 - Under Construction</h5>
-                                <p>This page is under construction and will be availabe soon.</p>
+                                <h5 class="font-weight-bold">Project - Tribute Site</h5>
+                                <p>
+                                    This site is a basic HTML / CSS site without Bootstrap.
+                                    The pictures gallery page does use Bootstrap.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div><!--/#meet-the-team-->
-
-
-            </div>
+                </div>
+                <!--/#meet-the-team-->
         </section>
     </div>
 
@@ -138,16 +209,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        &copy; 2019 Jerry Crow Profile Site. All Rights Reserved. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                        &copy; 2019 Jerry Crow Profile Site. All Rights Reserved. <a
+                            href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
                     </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                            <!--#gototop-->
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </footer>
+        <!--/#footer-->
     </div>
 
     <script src="js/bootstrap.min.js"></script>
@@ -155,4 +229,5 @@
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
 </body>
+
 </html>

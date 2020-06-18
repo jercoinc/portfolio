@@ -143,7 +143,7 @@ blockquote {
 
 .backstretch:before {
     content: '';
-    background-image: url(../images/overlays/04.png);
+    background-image: url(../../images/overlays/04.png);
     min-width: 100%;
     height: 100%;
     position: absolute;
@@ -898,7 +898,8 @@ ul.tag-cloud li {
 }
 
 .team-member .img-thumbnail {
-    padding: 0;
+    
+    padding: 10%;
     border-radius: 0;
     margin-bottom: 0;
     overflow: hidden;
@@ -906,6 +907,13 @@ ul.tag-cloud li {
     -moz-transition: background .3s color .3s box-shadow .3s;
     transition: background .3s color .3s box-shadow .3s;
 }
+
+.projectPadding .img-thumbnail {
+    
+    padding: 3%;
+}
+
+
 
 .team-content {
     background: #fff;
